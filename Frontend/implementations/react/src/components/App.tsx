@@ -2,14 +2,13 @@
 
 import React from 'react';
 import { PixelStreamingWrapper } from './PixelStreamingWrapper';
-import {Slider} from './Slider';
 
 export const App = () => {
     return (
         <div
             style={{
-                height: '80%',
-                width: '80%'
+                height: '100%',
+                width: '100%'
             }}
         >
             <PixelStreamingWrapper
@@ -22,12 +21,6 @@ export const App = () => {
                     WaitForStreamer: true
                 }}
             />
-
-            <Slider/>
-
-
         </div>
-        
-
     );
 };

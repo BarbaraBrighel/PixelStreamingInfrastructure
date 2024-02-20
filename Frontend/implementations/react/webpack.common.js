@@ -39,7 +39,6 @@ module.exports = {
         {
           test: /\.css$/,
           type: 'asset/resource',
-          use: ["style-loader", "css-loader"],
           generator: {
             filename: 'css/[name][ext]'
           }
@@ -54,7 +53,7 @@ module.exports = {
       ],
     },
     resolve: {
-      extensions: ['.tsx', '.ts', '.js', '.svg', '.json', '.css'],
+      extensions: ['.tsx', '.ts', '.js', '.svg', '.json'],
     },
     output: {
       filename: '[name].js',
